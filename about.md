@@ -21,13 +21,13 @@ One this page you will learn more about my blog project and why it's important t
 ## List of LP Writers
 
 {% for lpwriters in site.data.lpwriters %}
-- The {{ lpwriter.name }} is a {{ lpwriter.title }} writer.
+- The {{ lpwriters.name }} is a {{ lpwriters.title }} writer.
 {% endfor %}
 
 ## Writers from Sao Paulo
 
-{% for writer in site.data.lpwriters %}
-{% if lpwriters.location == "Sao Paulo" %}- <strong style="color: {{ lpwriter.color }};">{{ lpwriter.name }}</strong>
+{% for lpwriters in site.data.lpwriters %}
+{% if lpwriters.location == "Sao Paulo" %}- <strong style="color: {{ lpwriters.color }};">{{ lpwriters.name }}</strong>
 {% else %}- <Rio de Janeiro>{{ lpwriter.name }}</Rio de Janeiro>
 {% endif %}
 {% endfor %}
