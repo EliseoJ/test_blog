@@ -1,0 +1,9 @@
+# Site settings
+title: Cheo's Blog Site
+author: 
+  name: Eliseo Jacob
+  email: eliseo.jacob@gmail.com
+description: "Great site about Jekyll on GH-Pages."
+
+# Build settings
+remote_theme: jekyll/minima
