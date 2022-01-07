@@ -21,14 +21,14 @@ One this page you will learn more about my blog project and why it's important t
 ## List of LP Writers
 
 {% for lpwriters in site.data.lpwriters %}
-- The {{ lpwriters.name }} is a {{ lpwriters.title }} writer.
+- {{ lpwriters.name }} wrote the book {{ lpwriters.title }} .
 {% endfor %}
 
 ## Writers from Sao Paulo
 
 {% for lpwriters in site.data.lpwriters %}
 {% if lpwriters.location == "Sao Paulo" %}- <strong style="color: {{ lpwriters.color }};">{{ lpwriters.name }}</strong>
-{% else %}- <Rio de Janeiro>{{ lpwriter.name }}</Rio de Janeiro>
+{% else %}- <Rio de Janeiro>{{ lpwriters.name }}</Rio de Janeiro>
 {% endif %}
 {% endfor %}
 
@@ -36,5 +36,5 @@ One this page you will learn more about my blog project and why it's important t
 
 {% assign Rio de Janeiro_lpwriters = site.data.lpwriters | where: "location", "Rio de Janeiro" %}
 {% for writer in Rio de Janeiro_lpwriters %}
-- {{ lpwriter.name | upcase }}
+- {{ lpwriters.name | upcase }}
 {% endfor %}
