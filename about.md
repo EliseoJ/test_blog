@@ -33,9 +33,9 @@ The writers in bold are from São Paulo:
 {% endif %}
 {% endfor %}
 
-## Writers from Rio de Janeiro
+## Writers from Salvador
 
-{% assign Rio de Janeiro_lpwriters = lpwriters | where: "location", "Rio de Janeiro" %}
-{% for lpwriter in Rio de Janeiro_lpwriters %}
-- {{ lpwriters.name }}
+{% assign Salvador_lpwriters = site.data.lpwriters | where: "location", "Salvador" %}
+{% for lpwriter in Salvador_lpwriters %}
+- {{ lpwriters.name | upcase }}
 {% endfor %}
