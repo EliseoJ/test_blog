@@ -20,7 +20,7 @@ One this page you will learn more about my blog project and why it's important t
 
 ## List of LP Writers
 
-{% for writers in site.data.lpwriters %}
+{% for lpwriters in site.data.lpwriters %}
 - The {{ lpwriter.name }} is a {{ lpwriter.title }} writer.
 {% endfor %}
 
