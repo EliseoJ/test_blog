@@ -28,7 +28,7 @@ One this page you will learn more about my blog project and why it's important t
 
 {% for lpwriters in site.data.lpwriters %}
 {% if lpwriters.location == "Sao Paulo" %}- <strong style="color: {{ lpwriters.color }};">{{ lpwriters.name }}</strong>
-{% else %}- <Rio de Janeiro>{{ lpwriters.name }}</Rio de Janeiro>
+{% else %}- <Rio de Janeiro>{{ lpwriters.name }}
 {% endif %}
 {% endfor %}
 
