@@ -35,6 +35,6 @@ One this page you will learn more about my blog project and why it's important t
 ## Writers from Rio de Janeiro
 
 {% assign Rio de Janeiro_lpwriters = site.data.lpwriters | where: "location", "Rio de Janeiro" %}
-{% for writer in Rio de Janeiro_lpwriters %}
+{% for lpwriters in Rio de Janeiro_lpwriters %}
 - {{ lpwriters.name | upcase }}
 {% endfor %}
