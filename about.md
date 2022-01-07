@@ -26,6 +26,7 @@ One this page you will learn more about my blog project and why it's important t
 
 ## Writers from Sao Paulo
 
+The writers in bold are from São Paulo:
 {% for lpwriters in site.data.lpwriters %}
 {% if lpwriters.location == "Sao Paulo" %}- <strong style="color: {{ lpwriters.color }};">{{ lpwriters.name }}</strong>
 {% else %} {{ lpwriters.name }}
